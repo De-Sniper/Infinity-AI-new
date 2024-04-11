@@ -77,7 +77,7 @@ module.exports = escalibud = async (client, m, chatUpdate, store) => {
 const Heroku = require("heroku-client");  
  const appname = process.env.APP_NAME || '';
  const herokuapi = process.env.HEROKU_API;    
-const author = process.env.STICKER_AUTHOR || 'KRESSWELL';
+const author = process.env.STICKER_AUTHOR || 'IANO DE SNIPER';
     const packname = process.env.STICKER_PACKNAME || 'InfinityAI';
 
     const kress = (m.quoted || m); 
@@ -93,10 +93,10 @@ const author = process.env.STICKER_AUTHOR || 'KRESSWELL';
     let text = (q = args.join(" "));
     const arg = budy.trim().substring(budy.indexOf(" ") + 1);
     const arg1 = arg.trim().substring(arg.indexOf(" ") + 1);
-const wapresence = process.env.WA_PRESENCE || 'recording';
+const wapresence = process.env.WA_PRESENCE || 'typing';
     const autoread = process.env.AUTOREAD || 'TRUE';
 const autobio = process.env.AUTOBIO || 'TRUE';
-const dev = process.env.OWNER || '254798242085'
+const dev = process.env.OWNER || '254746104266'
 
     const from = m.chat;
    const isRegister = register.includes(m.sender);
@@ -132,8 +132,8 @@ const runtime = function (seconds) {
     const color = (text, color) => {
       return !color ? chalk.green(text) : chalk.keyword(color)(text);
     };
- const devkresswell = dev.split(",");
-    const Owner = devkresswell.map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(m.sender)
+ const devSNIPER = dev.split(",");
+    const Owner = devSNIPER.map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(m.sender)
 
     // Group
     
